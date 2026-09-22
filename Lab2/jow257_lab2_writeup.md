@@ -18,7 +18,8 @@ class Solution:
             root1 = root2
             root1.left = self.mergeTrees(root1.left, None)
             root1.right = self.mergeTrees(root1.right, None)
-        return root1 ```
+        return root1
+```
 # What the code does and why
 We are trying to return a tree that is tree 1 and tree 2 merged together. In my implementation I treat tree 1 as the tree that will be the sum of tree1 and tree2
 There are three cases in the code:
