@@ -29,5 +29,5 @@ There are three cases in the code:
     Merge the root nodes by keeping tree1.val the same, then recursively merge the subtree of just root1. As I am writing this I realize that we could just return root1, since it is the only tree left and also the merged tree.
  3. When only the first tree's root is null
     Merge the root nodes by setting 'root1 = root2', then recursively merge the subtree of root1, which is now equal to root 2. As I am writing I realize that it would work to just set root 1 equal to root 2, then return root1, for the same reason as before.
-# Runtime analysis
+# Runtime and memory analysis
 The solution is O(n) runtime, as well as O(n), where n is the number of nodes of the larger binary tree, since we perform a function call on every node, each adding a new frame to the stack, and each function call performs a constant amount of work (n * 1) = n.
